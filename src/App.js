@@ -1,19 +1,29 @@
-import Link from "./components/Link/Link"
+import NavBar from "./components/Link/Link";
+import User from "./components/User/User";
+
 
 function App() {
-  const rightLinks = ["link3","link4","link5"];
-  const leftLinks = ["link1","link2"];
 
-return (
-  <div className="App">
-    <ul>
-      {rightLinks}
-      {leftLinks}
-    </ul>
-  </div>
-)
+  const styles = {
+    display: "block",
+  };
 
+
+  return (
+    <div className="App">
+      
+        <nav style={styles}>
+          
+          <NavBar inlines/>
+
+
+        </nav>
+
+        <div>
+          <User/>
+        </div>
+    </div>
+  );
 }
-
 
 export default App;
